@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#F4F2F2">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
+        <EditText
+            android:id="@+id/mName"
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:hint="Enter movie name" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search"
+            android:layout_gravity="center"
+            android:id="@+id/btn"
+            android:backgroundTint="#040404"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_marginTop="20px"
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_launcher_background"
+            android:visibility="invisible"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="20px"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:visibility="invisible"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="20px"/>
+
+        <TextView
+            android:id="@+id/year"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Year"
+            android:visibility="invisible"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="20px"/>
+
+        <TextView
+            android:id="@+id/actor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Actor"
+            android:visibility="invisible"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="20px"/>
+
+        <TextView
+            android:id="@+id/director"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Director"
+            android:visibility="invisible"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="20px"/>
+
+        <TextView
+            android:id="@+id/country"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Country"
+            android:visibility="invisible"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="20px"/>
+
+        <TextView
+            android:id="@+id/language"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Language"
+            android:visibility="invisible"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="20px"/>
+
+        <TextView
+            android:id="@+id/genre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:visibility="invisible"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="20px"/>
+
+        <TextView
+            android:id="@+id/rating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:visibility="invisible"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="20px"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/plot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Plot"
+            android:visibility="invisible"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="20px"/>
+    </LinearLayout>
+
+</LinearLayout>
