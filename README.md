@@ -3,3 +3,4 @@
 2. Random Password Generator
 3. Calculator
 4. Flash Light app
+5. OMDB movie search engine
