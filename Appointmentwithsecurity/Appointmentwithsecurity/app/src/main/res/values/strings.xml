@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Appointment with security</string>
+    <string name="Create_account"><u>Create account</u></string>
+    <string name="Login"><u>Login</u></string>
+</resources>
