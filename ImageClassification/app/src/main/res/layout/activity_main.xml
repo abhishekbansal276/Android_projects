@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fillViewport="true"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:id="@+id/myCV"
+            app:cardElevation="10dp"
+            android:elevation="10dp"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:id="@+id/myImage"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:id="@+id/btnLL"
+            android:layout_below="@+id/myCV">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/loadImgBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="#051870"
+                android:textColor="@color/white"
+                android:fontFamily="@font/alfa_slab_one"
+                android:text="Browse" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Capture"
+                android:background="#051870"
+                android:textColor="@color/white"
+                android:fontFamily="@font/alfa_slab_one"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/takeImgBtn"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:id="@+id/resultLL"
+            android:layout_below="@+id/btnLL"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RESULT: "
+                android:fontFamily="@font/alfa_slab_one"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/resultTv"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/alfa_slab_one"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/resultLL"
+            android:layout_marginTop="20dp"
+            android:id="@+id/searchTxt"
+            android:visibility="invisible"
+            android:text="Click on result to search on web."
+            android:fontFamily="@font/alfa_slab_one"/>
+
+    </RelativeLayout>
+
+</ScrollView>
